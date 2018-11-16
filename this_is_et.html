@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>My Bio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3-mod.css">
+<link rel="stylesheet" href="css/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+<!-- From https://www.w3schools.com/css/css_rwd_templates.asp freely available -->
+</style>
+<body>
+
+/* <!-- Navbar -->
+<div>
+  <?php include('includes/navmenu-include.php');?>
+</div>
+
+<!-- Sidebar -->
+<nav>
+  <?php include('includes/sidebar-include.php');?>
+</nav> */
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">This is Emmanuel Edward Te</h1>
+      <p>Email: emste [dot] mlis [at] gmail [dot] com</a></p>
+	  <p> insert other social media contact sites </p>
+    </div>
+	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+	<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="este92"><a class="LI-simple-link" href='https://www.linkedin.com/in/este92?trk=profile-badge' alt='LinkedIn Profile Badge for Emmanuel Edward Te'>Emmanuel Edward Te</a></div>
+  </div>
+
+  <div>
+    <a href='https://www.linkedin.com/in/este92?trk=profile-badge' target='_blank'>
+    <img src='Resources/me.jpg' width=250 alt='A picture of me'>
+    </a>
+  </div>
+
+
+  <div>
+    <p>So a bit about me. I'm Asian American, native San Franciscan, and aspiring data profressional. I got a BA in Psychology and a Master in Library and Information Science. What can I say, other than that there's a lot going on... </p>
+    <p>Some cool hobbies involve video games, anime, and more video games.</p>
+  </div>
+
+  <div>
+    <h2>Interests and hobbies:</h2>
+    <ol>
+            <li>Video games (PS4, PC)</li>
+            <li>Anime (particularly Gundam)</li>
+            <li><a href="http://gundam.wikia.com/wiki/Gundam">Gundam</a></li>
+            <li>Builing Gundam model kits</li>
+            <li>More video games</li>
+            <li>Education/Professional Development/Reasearch</li>
+        </ol>
+  </div>
+  
+  <div>
+    <table border=2 cellpadding=4>
+                <thead>
+                <tr>
+                    <th colspan='4'>Some of my favorite things</th>
+                </tr>
+                    <tr>
+                        <th>Movies</th><th>Books</th>
+                        <th>Songs</th><th>Hobbies</th>
+                    </tr>                   
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fearless</td><td>The Road Less Traveled</td>
+                        <td>Rise (LoL Worlds 2018 anthem)</td><td>Destiny 2 (PS4)</td>
+                    </tr>
+                    <tr>
+                        <td>Gundam: Char's Counterattack</td><td>Quiet</td><td>Finest Hour (Cash Cash)</td>
+                    </tr>
+                    <tr>
+                            <td>South-East</td><td>Tim</td><td>$900</td>
+                    </tr>
+                    <tr>
+                            <td>South-West</td><td>Jeff</td><td>$1,000</td>
+                    </tr>
+                    <tr>
+                            <td>North-West</td><td>Sarah</td><td>$4,000</td>
+                    </tr>
+                    <tr>
+                            <td>North-East</td><td>Alex</td><td>$2,000</td>
+                    </tr>
+                    <tr>
+                            <td>North-East</td><td>Kevin</td><td>$5,000</td>
+                    </tr>
+                    <tr>
+                            <td>South-East</td><td>Patricia</td><td>$6,300</td>
+                    </tr>
+                    <tr>
+                            <td>South-West</td><td>Arnold</td><td>$200</td>
+                    </tr>
+                    <tr>
+                            <td>North-West</td><td>Lindsay</td><td>$800</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan=4>Stuff happens, have fun</td>
+                    </tr>			
+                </tfoot>
+            </table>
+  </div>
+
+  /* <footer id="myFooter">
+     <?php include('includes/footer-include.php');?>
+  </footer> */
+
+<!-- END MAIN -->
+</div>
+
+/* <script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script> */
+
+</body>
+</html>
