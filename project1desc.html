@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>My Bio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3-mod.css">
+<link rel="stylesheet" href="css/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+<!-- From https://www.w3schools.com/css/css_rwd_templates.asp freely available -->
+</style>
+<body>
+
+/* <!-- Navbar -->
+<div>
+  <?php include('includes/navmenu-include.php');?>
+</div>
+
+<!-- Sidebar -->
+<nav>
+  <?php include('includes/sidebar-include.php');?>
+</nav> */
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Project 1 Description</h1>
+      <p>Alright, so this is a project that I worked on for the UCBEx bootcamp.</p>
+      <p>Pywaii is the name of the project, and these are some snips of the output.</p>
+      <p>How cool are these charts brah, check these charts out brah</p>
+    </div>
+
+    <div>
+    <figure>
+    <img src='Resources/pywaii_station_prcp_year.jpg' width=250 alt='Pywaii station prcp year'>
+    <figcaption>A cool dataframe of output of precipitation levels in Pywaii</figcaption>
+    </figure>
+    </div>
+
+    <div>
+    <figure>
+    <img src='Resources/pywaii_observed_temps_sample.jpg' width=250 alt='Pywaii observed temps sample'>
+    <figcaption>A cool area plot of Pywaii observed temps sample</figcaption>
+    </figure>
+    </div>
+
+    <div>
+    <figure>
+    <img src='Resources/pywaii_daily_norms.jpg' width=250 alt='Pywaii daily norms'>
+    <figcaption>A cool area plot of Pywaii daily norms calculated</figcaption>
+    </figure>
+    </div>
+
+</div>
+
+  /* <footer id="myFooter">
+     <?php include('includes/footer-include.php');?>
+  </footer> */
+
+<!-- END MAIN -->
+</div>
+
+/* <script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+</script> */
+
+</body>
+</html>
